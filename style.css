@@ -19,7 +19,7 @@ body {
     margin-left: -15px;
 }
 
-.row:after, menu:after {
+.row:after, menu:after, form:after, .item-quantity:after {
     content: "";
     display: block;
     clear: both;

@@ -188,3 +188,19 @@ button:focus {
     background-color: #fff;
     color: #2c71b8;
 }
+
+.arrow {
+    display: none;
+    width: 15px;
+    height: 15px;
+    background-image: url(images/down-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -29px;
+    left: 123px;
+}
+
+.menu li:hover .arrow {
+    display: block;
+}

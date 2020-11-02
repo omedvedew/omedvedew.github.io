@@ -190,7 +190,7 @@ button:focus {
 }
 
 .arrow {
-    display: none;
+    display: block;
     width: 15px;
     height: 15px;
     background-image: url(images/down-arrow.png);
@@ -201,6 +201,4 @@ button:focus {
     left: 123px;
 }
 
-.menu li:hover .arrow {
-    display: block;
-}
+

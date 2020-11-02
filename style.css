@@ -148,6 +148,7 @@ button:focus {
 
 .products {
     position: relative;
+    height: 50px;
 }
 
 .submenu {

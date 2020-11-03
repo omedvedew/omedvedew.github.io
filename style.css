@@ -190,11 +190,15 @@ button:focus {
     color: #2c71b8;
 }
 
+.menu li:hover .arrow {
+    background-image: url(images/down-arrow.png);
+}
+
 .arrow {
     display: block;
     width: 15px;
     height: 15px;
-    background-image: url(images/down-arrow.png);
+    background-image: url(images/down-arrow-blue.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;

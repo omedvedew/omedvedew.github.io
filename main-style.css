@@ -205,3 +205,17 @@
     margin-top: 15px;
     margin-left: 10px;
 }
+
+.details-btn:hover {
+    color: #2c71b8;
+    background-color: white;
+}
+
+.to-cart-btn:hover {
+    color: #2c71b8;
+    background-color: white;
+}
+
+.to-cart-btn:hover .cart-2 {
+    background-image: url(images/icon\ \(1\).png);
+}

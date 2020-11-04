@@ -164,6 +164,7 @@
 .details-btn {
     display: block;
     background: none;
+    background-color: #2c71b8;
     border: 1px solid white;
     color: white;
     text-align: center;
@@ -178,7 +179,7 @@
 
 .to-cart-btn {
     background: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #2c71b8;
     display: block;
     border: 1px solid white;
     color: white;
@@ -207,15 +208,11 @@
 }
 
 .details-btn:hover {
-    color: #2c71b8;
-    background-color: white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .to-cart-btn:hover {
-    color: #2c71b8;
-    background-color: white;
-}
-
-.to-cart-btn:hover .cart-2 {
-    background-image: url(images/icon\ \(1\).png);
+    color:white;
+    background-color: rgba(255, 255, 255, 0.2);
 }

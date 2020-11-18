@@ -271,5 +271,24 @@
 
 .submit-btn:hover {
     background-color: transparent;
+}
 
+label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: white;
+}
+
+input[type="checkbox"] {
+    display: none;
 }

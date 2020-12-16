@@ -23,3 +23,11 @@ for (i = 0; i < addToCartBtns.length; i++) {
 
 
 
+
+
+
+
+
+
+
+

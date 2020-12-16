@@ -1,33 +1,10 @@
+
 let favourite = document.querySelectorAll(".favourites-btn");
 console.log(favourite);
 
-for (i = 0; i <favourite.length; i++) {
-    let activeFavourite = favourite[i];
-    favourite[i].addEventListener("click", function() {
-        activeFavourite.classList.add("active-favourite-btn");
-        if (activeFavourite.hasAttribute("class", "active-fafourite-btn")) {
-            activeFavourite.addEventListener("click", function() {
-                activeFavourite.classList.remove("active-favourite-btn");
-                // changeFavStatus();
-            });
-        };
+favourite.forEach((item) => {
+    item.addEventListener("click", function(e) {
+        e.preventDefault();
+        item.classList.toggle("active-favourite-btn");
     });
-};
-
-// function changeFavStatus() {
-//     for (i = 0; i <favourite.length; i++) {
-//         let activeFavourite = favourite[i];
-//         favourite[i].addEventListener("click", function() {
-//             activeFavourite.classList.add("active-favourite-btn");
-//             if (activeFavourite.hasAttribute("class", "active-fafourite-btn")) {
-//                 activeFavourite.addEventListener("click", function() {
-//                     activeFavourite.classList.remove("active-favourite-btn");
-//                     changeFavStatus();
-//                 });
-//             };
-//         });
-//     };
-// };
-
-
-
+});

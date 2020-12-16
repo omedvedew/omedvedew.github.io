@@ -99,6 +99,29 @@
     background-position: center;
 }
 
+.active-favourite-btn {
+    background: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    background-image: url(images/icon\ \(7\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2c71b8;
+}
+
+.active-favourite-btn:focus {
+    outline: none;
+    background-color: #2c71b8;
+}
+
+.active-favourite-btn:hover {
+    cursor: pointer;
+}
+
 .favourites-btn:hover {
     background-color: #2c71b8;
     background-image: url(images/icon\ \(7\).png);

@@ -35,6 +35,19 @@ moreDetailsBtns.forEach((btn) => {
 
 closeBtn.addEventListener("click", closeModal);
 
+modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+        closeModal();
+    };
+});
+
+function showModalByScroll() {
+    if (window.pageYOffset >= document.documentElement.scrollHeight/2) {
+        openModal();
+    };
+};
+
+window.addEventListener("scroll", showModalByScroll, {once:true});
 
 
 

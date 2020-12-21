@@ -12,6 +12,28 @@ for (i = 0; i < addToCartBtns.length; i++) {
     });
 };
 
+let moreDetailsBtns = document.querySelectorAll(".details-btn");
+console.log(moreDetailsBtns);
+let modal = document.querySelector(".modal");
+console.log(modal);
+let closeBtn = document.querySelector(".btn-close");
+console.log(closeBtn);
+
+function closeModal() {
+    modal.classList.add("hide");
+    modal.classList.remove("show");
+}
+
+function openModal() {
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+}
+
+moreDetailsBtns.forEach((btn) => {
+    btn.addEventListener("click", openModal)
+});
+
+closeBtn.addEventListener("click", closeModal);
 
 
 

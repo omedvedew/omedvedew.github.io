@@ -345,7 +345,7 @@ input[type="checkbox"] {
     padding: 5px;
 }
 
-.form {
+form {
     position: relative;
     padding-top: 20px;
 }

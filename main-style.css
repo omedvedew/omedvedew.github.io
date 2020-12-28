@@ -1,6 +1,5 @@
 .slider {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 400px;
 }
 
 .no-float {
@@ -404,4 +403,19 @@ input[type="checkbox"] {
     color: red;
     border: 1px solid red;
     cursor: not-allowed;
+}
+
+.slider-block {
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
 }

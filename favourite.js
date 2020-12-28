@@ -1,6 +1,5 @@
 
 let favourite = document.querySelectorAll(".favourites-btn");
-console.log(favourite);
 
 favourite.forEach((item) => {
     item.addEventListener("click", function(e) {

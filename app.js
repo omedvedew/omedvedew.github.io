@@ -153,6 +153,16 @@ function Counter(incrementButton, decrementButton, inputField, defaultValue = 1,
         let count = +this.domRefs.inputField.value;
         this.domRefs.decrementButton.disabled = count <= minCount;
         this.domRefs.incrementButton.disabled = count >= maxCount;
+        if (this.domRefs.decrementButton.disabled) {
+            this.domRefs.decrementButton.classList.add("button-disabled");
+        } else {
+            this.domRefs.decrementButton.classList.remove("button-disabled");
+        };
+        if (this.domRefs.incrementButton.disabled) {
+            this.domRefs.incrementButton.classList.add("button-disabled");
+        } else {
+            this.domRefs.incrementButton.classList.remove("button-disabled");
+        };
     }
     this.toggleButtonState();
     this.increment = function() {

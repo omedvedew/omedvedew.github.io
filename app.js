@@ -185,9 +185,10 @@ function Counter(incrementButton, decrementButton, inputField, defaultValue = 1,
     this.domRefs.decrementButton.addEventListener("click", this.decrement.bind(this));
 };
 
-for (i = 0; i < quantityValue.length; i++) {
-    const counter = new Counter(incrementButtons[i], decrementButtons[i], quantityValue[i], 1, 1, 5);
-};
+let counters = [];
+quantityValue.forEach((count, i) => {
+    counters[i] = new Counter(incrementButtons[i], decrementButtons[i], quantityValue[i], 1, 1, 5);
+});
 
 
 

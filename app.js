@@ -10,6 +10,8 @@ for (let i = 0; i < addToCartBtns.length; i++) {
         // productsCountEl.textContent = prevProductsCount + 1;
         productsCountEl.textContent = +productsCountEl.textContent + +quantityValue[i].value;
         quantityValue[i].value = 1;
+        incrementButtons[i].disabled = false;
+        incrementButtons[i].classList.remove("button-disabled");
     });
 };
 

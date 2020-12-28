@@ -12,6 +12,8 @@ for (let i = 0; i < addToCartBtns.length; i++) {
         quantityValue[i].value = 1;
         incrementButtons[i].disabled = false;
         incrementButtons[i].classList.remove("button-disabled");
+        decrementButtons[i].disabled = true;
+        decrementButtons[i].classList.add("button-disabled");
     });
 };
 
